@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { EffectFade, Navigation, Thumbs } from "swiper";
+import { EffectFade, Thumbs, Navigation, Autoplay } from "swiper";
+import { ProjectSlide } from "../../../slide";
+import { ProjectProps } from "../../../../types/projects";
 
-SwiperCore.use([EffectFade, Navigation, Thumbs]);
-
-const Projects = () => {
+const Projects = ({ projects }: ProjectProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   return (
@@ -21,88 +21,58 @@ const Projects = () => {
             </span>
           </h2>
         </header>
-        <div className="relative h-96">
+        <div className="relative h-96 ">
           <Swiper
+            modules={[EffectFade, Thumbs, Autoplay]}
             loop={true}
             spaceBetween={10}
             thumbs={{ swiper: thumbsSwiper }}
             className="project-swiper h-full"
-            grabCursor={true}
             effect="fade"
+            navigation={false}
+            allowTouchMove={false}
+            autoplay={{
+              delay: 5000,
+              pauseOnMouseEnter: true,
+              disableOnInteraction: false,
+            }}
           >
-            <SwiperSlide>
-              <div className="flex h-full">
-                <div className="w-1/2"></div>
-                <div className="w-1/2 relative flex justify-center items-center bg-white">
-                  <div className="block ">
-                    <Image
-                      src="/static/images/fixedit.png"
-                      alt="fixedit"
-                      layout="fill"
-                      objectFit="contain"
-                    />
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex h-full">
-                <div className="w-1/2"></div>
-                <div className="w-1/2 relative flex justify-center items-center bg-white h-full">
-                  <div className="block h-full">
-                    <Image
-                      src="/static/images/quickcheck.png"
-                      alt="qc"
-                      layout="fill"
-                      objectFit="contain"
-                    />
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex h-full">
-                <div className="w-1/2"></div>
-                <div className="w-1/2 relative flex justify-center items-center bg-white">
-                  <div className="block">
-                    <Image
-                      src="/static/images/sarinv.png"
-                      alt="intrinsic"
-                      layout="fill"
-                      objectFit="contain"
-                    />
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="flex h-full">
-                <div className="w-1/2"></div>
-                <div className="w-1/2 relative flex justify-center items-center bg-white h-full">
-                  <div className="block h-full">
-                    <Image
-                      src="/static/images/quickcheck.png"
-                      alt="qc"
-                      layout="fill"
-                      objectFit="contain"
-                    />
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+            {projects?.map((project) => (
+              <SwiperSlide key={project.id}>
+                <ProjectSlide
+                  img={project.img}
+                  href={project.href}
+                  title={project.title}
+                  subTitle={project.subTitle}
+                  text={project.text}
+                  footerText={project.footerText}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
-          <div className="w-1/2 absolute bottom-0 left-0 bg-white">
+          <div className="w-1/2 absolute top-3/4 left-0 bg-white">
             <Swiper
+              style={{
+                //@ts-ignore
+                "--swiper-navigation-color": "#000",
+              }}
+              modules={[Navigation]}
               onSwiper={setThumbsSwiper}
               loop={true}
               spaceBetween={10}
               slidesPerView={3}
               freeMode={true}
               watchSlidesProgress={true}
+              grabCursor={true}
               className="project-swiper-thumb"
+              navigation={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
             >
               <SwiperSlide>
-                <div className="border-solid border-2">
+                <div className="flex justify-center items-center relative">
                   <Image
                     src="/static/images/fixedit.png"
                     alt="intrinsic"
@@ -112,7 +82,7 @@ const Projects = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="border-solid border-2">
+                <div className="flex justify-center items-center relative">
                   <Image
                     src="/static/images/quickcheck.png"
                     alt="intrinsic"
@@ -122,7 +92,7 @@ const Projects = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="border-solid border-2">
+                <div className="flex justify-center items-center relative">
                   <Image
                     src="/static/images/sarinv.png"
                     alt="intrinsic"
@@ -132,7 +102,7 @@ const Projects = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="border-solid border-2">
+                <div className="flex justify-center items-center relative">
                   <Image
                     src="/static/images/quickcheck.png"
                     alt="intrinsic"

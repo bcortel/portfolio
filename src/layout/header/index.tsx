@@ -23,12 +23,12 @@ function Header() {
             </li>
             <li>
               <a className={"p-7 inline-block"} href="">
-                Skills
+                Projects
               </a>
             </li>
             <li>
               <a className={"p-7 inline-block"} href="">
-                Projects
+                Skills
               </a>
             </li>
             <li>
