@@ -1,6 +1,6 @@
 import MainLayout from "../../layout/main";
 
-const Skills = () => {
+const SkillsPage = () => {
   return (
     <MainLayout>
       <div>
@@ -10,4 +10,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsPage;

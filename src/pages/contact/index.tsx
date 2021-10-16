@@ -1,6 +1,6 @@
 import MainLayout from "../../layout/main";
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <MainLayout>
       <div>
@@ -10,4 +10,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

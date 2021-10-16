@@ -40,7 +40,7 @@ const Introduction = () => {
             <li>
               <a href="" className="px-2">
                 <FontAwesomeIcon
-                  size={"2x"}
+                  size={"lg"}
                   icon={faFacebook}
                   color="#4267B2"
                 />

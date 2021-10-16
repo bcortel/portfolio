@@ -1,4 +1,4 @@
-export type Projects = {
+export type Project = {
   id: number;
   img: string;
   title: string;
@@ -9,5 +9,5 @@ export type Projects = {
 };
 
 export type ProjectProps = {
-  projects: Projects[];
+  projects: Project[];
 };

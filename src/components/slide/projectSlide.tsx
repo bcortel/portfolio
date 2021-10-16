@@ -48,6 +48,7 @@ const ProjectSlide = ({
             alt="slide"
             layout="fill"
             objectFit="contain"
+            priority={true}
           />
         </div>
       </div>

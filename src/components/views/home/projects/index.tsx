@@ -1,15 +1,15 @@
 import { useState } from "react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Thumbs, Navigation, Autoplay } from "swiper";
 import { ProjectSlide } from "../../../slide";
 import { ProjectProps } from "../../../../types/projects";
+import { ProjectSliderThumb } from "../../../sliderThumb";
 
 const Projects = ({ projects }: ProjectProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   return (
-    <section className="py-10">
+    <section className="py-10 pb-16">
       <div className="container mx-auto">
         <header className="text-center mb-14">
           <h2 className="font-serif">
@@ -50,7 +50,7 @@ const Projects = ({ projects }: ProjectProps) => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="w-1/2 absolute top-3/4 left-0 bg-white">
+          <div className="w-1/2 absolute top-3/4 left-0 bg-white px-4">
             <Swiper
               style={{
                 //@ts-ignore
@@ -71,46 +71,11 @@ const Projects = ({ projects }: ProjectProps) => {
                 disableOnInteraction: false,
               }}
             >
-              <SwiperSlide>
-                <div className="flex justify-center items-center relative">
-                  <Image
-                    src="/static/images/fixedit.png"
-                    alt="intrinsic"
-                    width={300}
-                    height={150}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex justify-center items-center relative">
-                  <Image
-                    src="/static/images/quickcheck.png"
-                    alt="intrinsic"
-                    width={300}
-                    height={150}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex justify-center items-center relative">
-                  <Image
-                    src="/static/images/sarinv.png"
-                    alt="intrinsic"
-                    width={300}
-                    height={150}
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex justify-center items-center relative">
-                  <Image
-                    src="/static/images/quickcheck.png"
-                    alt="intrinsic"
-                    width={300}
-                    height={150}
-                  />
-                </div>
-              </SwiperSlide>
+              {projects?.map((project) => (
+                <SwiperSlide key={project.id}>
+                  <ProjectSliderThumb src={project.img} />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>

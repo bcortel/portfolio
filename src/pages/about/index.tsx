@@ -1,6 +1,6 @@
 import MainLayout from "../../layout/main";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <MainLayout>
       <div>
@@ -10,4 +10,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

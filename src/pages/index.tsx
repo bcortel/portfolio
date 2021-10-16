@@ -1,13 +1,21 @@
 import MainLayout from "../layout/main";
 import { About, Introduction, Projects } from "../components/views/home";
-import { ProjectProps } from "../types/projects";
+import { Project } from "../types/projects";
+import Skills from "../components/views/home/skills";
+import { Logo } from "../types/logos";
 
-const Home = ({ projects }: ProjectProps) => {
+type Props = {
+  projects: Project[];
+  logos: Logo[];
+};
+
+const Home = ({ projects, logos }: Props) => {
   return (
     <MainLayout>
       <Introduction />
       <About />
       <Projects projects={projects} />
+      <Skills logos={logos} />
     </MainLayout>
   );
 };
@@ -66,6 +74,122 @@ export async function getStaticProps() {
           footerText:
             "Technologies used: Java, JavaFX, Java for Android Development",
           href: "https://www.youtube.com/watch?v=qiWA5Dho2jY",
+        },
+      ],
+      logos: [
+        {
+          id: 1,
+          src: "/static/images/logos/android.png",
+          height: 384,
+          width: 384,
+        },
+        {
+          id: 2,
+          src: "/static/images/logos/bootstrap.png",
+          height: 384,
+          width: 306,
+        },
+        {
+          id: 3,
+          src: "/static/images/logos/cloudinary.png",
+          height: 74,
+          width: 384,
+        },
+        {
+          id: 4,
+          src: "/static/images/logos/express.png",
+          height: 116,
+          width: 384,
+        },
+        {
+          id: 5,
+          src: "/static/images/logos/gcp.png",
+          height: 256,
+          width: 384,
+        },
+        {
+          id: 6,
+          src: "/static/images/logos/golang.png",
+          height: 144,
+          width: 384,
+        },
+        {
+          id: 7,
+          src: "/static/images/logos/java.png",
+          height: 384,
+          width: 384,
+        },
+        {
+          id: 8,
+          src: "/static/images/logos/javafx.png",
+          height: 160,
+          width: 384,
+        },
+        {
+          id: 9,
+          src: "/static/images/logos/laravel.png",
+          height: 399,
+          width: 384,
+        },
+        {
+          id: 10,
+          src: "/static/images/logos/mongodb.png",
+          height: 240,
+          width: 384,
+        },
+        {
+          id: 11,
+          src: "/static/images/logos/nodejs.png",
+          height: 235,
+          width: 384,
+        },
+        {
+          id: 12,
+          src: "/static/images/logos/php.png",
+          height: 207,
+          width: 384,
+        },
+        {
+          id: 13,
+          src: "/static/images/logos/react.png",
+          height: 129,
+          width: 384,
+        },
+        {
+          id: 14,
+          src: "/static/images/logos/tailwind.png",
+          height: 213,
+          width: 384,
+        },
+        {
+          id: 15,
+          src: "/static/images/logos/wp.png",
+          height: 213,
+          width: 384,
+        },
+        {
+          id: 16,
+          src: "/static/images/logos/psql.png",
+          height: 213,
+          width: 384,
+        },
+        {
+          id: 17,
+          src: "/static/images/logos/rn.png",
+          height: 213,
+          width: 384,
+        },
+        {
+          id: 18,
+          src: "/static/images/logos/nextjs.png",
+          height: 213,
+          width: 384,
+        },
+        {
+          id: 19,
+          src: "/static/images/logos/mysql.png",
+          height: 213,
+          width: 384,
         },
       ],
     },
