@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import "../../styles/global.scss";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "tailwindcss/tailwind.css";
 import "swiper/css";
 import "swiper/css/navigation";

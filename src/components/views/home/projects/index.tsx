@@ -9,7 +9,7 @@ const Projects = ({ projects }: ProjectProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   return (
-    <section className="py-10 pb-16">
+    <section className="py-10 pb-16" id="projects">
       <div className="container mx-auto">
         <header className="text-center mb-14">
           <h2 className="font-serif">

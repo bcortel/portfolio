@@ -5,7 +5,7 @@ import { LogoProps } from "../../../../types/logos";
 
 const Skills = ({ logos }: LogoProps) => {
   return (
-    <section className="py-16">
+    <section className="py-16" id="skills">
       <div className="container mx-auto">
         <header className="text-center mb-10">
           <h2 className="font-serif">

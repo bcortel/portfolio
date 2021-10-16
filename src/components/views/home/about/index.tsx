@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section id="hp-about" className="relative py-14">
+    <section id="about" className="relative py-14">
       <div className="container mx-auto ">
         <div className="flex justify-around">
           <div className="w-1/2 flex justify-center">

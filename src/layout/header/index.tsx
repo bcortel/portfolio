@@ -1,5 +1,4 @@
-import clsx from "clsx";
-import React from "react";
+const { Link } = require("react-scroll");
 
 function Header() {
   return (
@@ -10,31 +9,66 @@ function Header() {
     >
       <div className={"container mx-auto flex justify-between px-5"}>
         <div>
-          <a href="#" className={"py-7 inline-block"}>
+          <Link
+            className="py-7 inline-block cursor-pointer"
+            activeClass="active"
+            to="banner"
+            spy={true}
+            smooth={true}
+            duration={1000}
+          >
             Home
-          </a>
+          </Link>
         </div>
         <nav>
           <ul className={"flex -mr-5"}>
             <li>
-              <a className={"p-7 inline-block"} href="">
+              <Link
+                className="p-7 inline-block cursor-pointer"
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={"p-7 inline-block"} href="">
+              <Link
+                className="p-7 inline-block cursor-pointer"
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={"p-7 inline-block"} href="">
+              <Link
+                className="p-7 inline-block cursor-pointer"
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a className={"p-7 inline-block "} href="">
+              <Link
+                className="p-7 inline-block cursor-pointer"
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
                 Contact Me
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

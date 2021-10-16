@@ -1,4 +1,5 @@
 import MainLayout from "../layout/main";
+import Head from "next/head";
 import { About, Introduction, Projects } from "../components/views/home";
 import { Project } from "../types/projects";
 import Skills from "../components/views/home/skills";
@@ -12,6 +13,9 @@ type Props = {
 const Home = ({ projects, logos }: Props) => {
   return (
     <MainLayout>
+      <Head>
+        <title>Butch Klein</title>
+      </Head>
       <Introduction />
       <About />
       <Projects projects={projects} />
