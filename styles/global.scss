@@ -5,3 +5,22 @@ html, body {
 #__next {
     height: 100%;
 }
+
+.project-swiper .swiper-slide {
+    opacity: 0 !important;
+    transition: 500ms ease;
+}
+  
+.project-swiper .swiper-slide-active {
+    opacity: 1 !important;
+}
+
+.project-swiper-thumb .swiper-slide {
+    opacity: 0.4;
+    transition: 500ms ease;
+}
+  
+.project-swiper-thumb .swiper-slide-thumb-active {
+    opacity: 1;
+}
+

@@ -18,7 +18,7 @@ function MainLayout({ children, className, style }: Props) {
       <Banner />
       <main
         style={style}
-        className={clsx(styles["content"], className, "container mx-auto")}
+        className={clsx(styles["content"], className, "leading-6 ")}
       >
         {children}
         <Footer />

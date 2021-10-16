@@ -5,17 +5,17 @@ function Header() {
   return (
     <header
       className={
-        "w-screen fixed top-0 text-white bg-gradient-to-b from-black font-medium uppercase"
+        "w-screen fixed top-0 text-white bg-gradient-to-b from-black font-medium uppercase z-10 "
       }
     >
-      <div className={"container mx-auto flex justify-between"}>
+      <div className={"container mx-auto flex justify-between px-5"}>
         <div>
           <a href="#" className={"py-7 inline-block"}>
             Home
           </a>
         </div>
         <nav>
-          <ul className={"flex -mr-7"}>
+          <ul className={"flex -mr-5"}>
             <li>
               <a className={"p-7 inline-block"} href="">
                 About

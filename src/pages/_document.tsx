@@ -14,15 +14,8 @@ export default class Document extends NextDocument {
 
   render() {
     return (
-      <Html>
-        <Head>
-          <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
-          <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
-          <script
-            defer
-            src="/your-path-to-fontawesome/js/fontawesome.js"
-          ></script>
-        </Head>
+      <Html className=" w-screen overflow-x-hidden">
+        <Head></Head>
         <body>
           <Main />
           <NextScript />
