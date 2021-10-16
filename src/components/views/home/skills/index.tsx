@@ -29,7 +29,7 @@ const Skills = ({ logos }: LogoProps) => {
           loop={true}
           spaceBetween={20}
           slidesPerView={6}
-          speed={4000}
+          speed={10000}
           allowTouchMove={false}
           preloadImages={true}
           watchSlidesProgress={true}

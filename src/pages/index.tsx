@@ -1,8 +1,12 @@
 import MainLayout from "../layout/main";
 import Head from "next/head";
-import { About, Introduction, Projects } from "../components/views/home";
+import {
+  About,
+  Introduction,
+  Projects,
+  Skills,
+} from "../components/views/home";
 import { Project } from "../types/projects";
-import Skills from "../components/views/home/skills";
 import { Logo } from "../types/logos";
 
 type Props = {
@@ -192,6 +196,36 @@ export async function getStaticProps() {
         {
           id: 19,
           src: "/static/images/logos/mysql.png",
+          height: 213,
+          width: 384,
+        },
+        {
+          id: 20,
+          src: "/static/images/logos/nodejs.png",
+          height: 235,
+          width: 384,
+        },
+        {
+          id: 21,
+          src: "/static/images/logos/php.png",
+          height: 207,
+          width: 384,
+        },
+        {
+          id: 22,
+          src: "/static/images/logos/react.png",
+          height: 129,
+          width: 384,
+        },
+        {
+          id: 23,
+          src: "/static/images/logos/tailwind.png",
+          height: 213,
+          width: 384,
+        },
+        {
+          id: 24,
+          src: "/static/images/logos/wp.png",
           height: 213,
           width: 384,
         },
