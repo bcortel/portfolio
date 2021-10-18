@@ -8,13 +8,15 @@ import {
 } from "../components/views/home";
 import { Project } from "../types/projects";
 import { Logo } from "../types/logos";
+import { PT } from "../types/pt";
 
 type Props = {
   projects: Project[];
   logos: Logo[];
+  pt: PT[];
 };
 
-const Home = ({ projects, logos }: Props) => {
+const Home = ({ projects, logos, pt }: Props) => {
   return (
     <MainLayout>
       <Head>
@@ -23,7 +25,7 @@ const Home = ({ projects, logos }: Props) => {
       <Introduction />
       <About />
       <Projects projects={projects} />
-      <Skills logos={logos} />
+      <Skills logos={logos} pt={pt} />
     </MainLayout>
   );
 };
@@ -67,7 +69,7 @@ export async function getStaticProps() {
           text: `A POS system for small business owners. It can record sales and manage inventory as well as show transaction history. ,
           It also uses built-in webcam/phone cam instead of a dedicated barcode/qrcode scanner for more flexibility. `,
           footerText:
-            "Technologies used: PHP, Laravel, Tailwind CSS, Cloudinary, Barcode/QR Code",
+            "Technologies used: PHP, Laravel, Tailwind CSS, Cloudinary, MySQL, Barcode/QR Code",
           href: "https://sarinventory.000webhostapp.com/",
         },
         {
@@ -228,6 +230,28 @@ export async function getStaticProps() {
           src: "/static/images/logos/wp.png",
           height: 213,
           width: 384,
+        },
+      ],
+      pt: [
+        {
+          id: 1,
+          src: "/static/images/PT.jpg",
+        },
+        {
+          id: 2,
+          src: "/static/images/PT2.jpg",
+        },
+        {
+          id: 3,
+          src: "/static/images/PT3.jpg",
+        },
+        {
+          id: 4,
+          src: "/static/images/PT4.jpg",
+        },
+        {
+          id: 5,
+          src: "/static/images/PT5.jpg",
         },
       ],
     },

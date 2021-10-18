@@ -7,13 +7,15 @@ body {
     height: 100%;
 }
 
-.project-swiper .swiper-slide {
+.project-swiper .swiper-slide,
+.pt-swiper .swiper-slide {
     opacity: 0 !important;
     pointer-events: none;
     transition: 500ms ease;
 }
 
-.project-swiper .swiper-slide-active {
+.project-swiper .swiper-slide-active,
+.pt-swiper .swiper-slide-active {
     pointer-events: all;
     opacity: 1 !important;
 }

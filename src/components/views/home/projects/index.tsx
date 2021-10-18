@@ -50,7 +50,7 @@ const Projects = ({ projects }: ProjectProps) => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="w-1/2 absolute top-3/4 left-0 bg-white px-4">
+          <div className="w-1/2 absolute top-3/4 left-0 bg-white px-6">
             <Swiper
               style={{
                 //@ts-ignore

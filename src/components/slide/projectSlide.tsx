@@ -26,7 +26,7 @@ const ProjectSlide = ({
 
   return (
     <div className="flex min-h-full">
-      <div className="w-1/2 p-5 text-center">
+      <div className="w-1/2 p-5 px-6 text-center">
         <div className="mb-4">
           <div className="text-3xl font-bold ">{title}</div>
           <div className="text-xl text-gray-500">{subTitle}</div>

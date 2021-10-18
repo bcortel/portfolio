@@ -39,9 +39,9 @@ const About = () => {
               <br />
               <p>
                 Fast-forward to present, I&#39;m now working as a Frontend Web
-                Developer with a sprinkle of Backend. I am also freelancing as a
-                Frontend Web Developer. Feel free to view some of my projects
-                below!
+                Developer with a sprinkle of Backend and Mobile app development.
+                I am also freelancing as a Frontend Web Developer. Feel free to
+                view some of my projects below!
               </p>
             </div>
           </div>
