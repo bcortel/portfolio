@@ -15,7 +15,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="w-1/2 p-4">
+          <div className="w-1/2 p-4  ">
             <header>
               <h2 className="font-serif mb-5">
                 <span className="font-bold block uppercase text-xl text-gray-500 tracking-widest">
@@ -29,9 +29,9 @@ const About = () => {
 
             <div className="pr-20">
               <p>
-                Hello and welcome to my portfolio! I&#39;m a Software developer
-                and I have worked with different programming languages, stacks
-                and technologies. I first found my passion for programming on
+                Hello and welcome to my portfolio! I&#39;m a Web developer and I
+                have worked with different programming languages, stacks and
+                technologies. I first found my passion for programming on
                 embedded systems, wherein we worked on microcontrollers and
                 electronics. I also worked on Desktop and Mobile app development
                 for a final project for my Bachelor&#39;s degree.

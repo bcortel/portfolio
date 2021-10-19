@@ -28,9 +28,9 @@ const Skills = ({ logos, pt }: Props) => {
           I have tried different technologies on the projects that I have worked
           on. Even though I have my own preferences, I am always pushing myself
           to learn more or at least have a bit of understanding about how other
-          technologies work. I always strive to be as objective and as practical
-          as possible when planning, especially on my own projects where I can
-          do the calling.
+          technologies work. I always try to be as objective and as practical as
+          possible when planning, especially on my own projects where I can do
+          the calling.
         </p>
 
         <Marquee className="mb-20">
@@ -77,7 +77,7 @@ const Skills = ({ logos, pt }: Props) => {
               ))}
             </Swiper>
           </div>
-          <div className="w-1/2 pt-4 pb-20 pr-10">
+          <div className="w-1/2 pt-4 pb-28 pr-10">
             <div className="font-serif mb-10">
               <span className="font-bold block uppercase text-md text-gray-500 tracking-widest">
                 Teaching

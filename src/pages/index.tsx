@@ -9,6 +9,7 @@ import {
 import { Project } from "../types/projects";
 import { Logo } from "../types/logos";
 import { PT } from "../types/pt";
+import Contact from "../components/views/home/contact";
 
 type Props = {
   projects: Project[];
@@ -26,6 +27,7 @@ const Home = ({ projects, logos, pt }: Props) => {
       <About />
       <Projects projects={projects} />
       <Skills logos={logos} pt={pt} />
+      <Contact />
     </MainLayout>
   );
 };
