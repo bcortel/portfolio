@@ -8,7 +8,7 @@ const SectionHeader = ({
   className?: string;
 }) => {
   return (
-    <header className={`text-center mb-14 ${className}`}>
+    <header className={`${className}`}>
       <h2 className="font-serif">
         <span className="font-bold block uppercase text-xl text-gray-500 tracking-widest">
           {topTitle}

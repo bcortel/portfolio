@@ -4,6 +4,7 @@ import { EffectFade, Autoplay } from "swiper";
 import Marquee from "react-fast-marquee";
 import { Logo } from "../../../../types/logos";
 import { PT } from "../../../../types/pt";
+import SectionHeader from "../../../sectionHeader/sectionHeader";
 
 type Props = {
   logos: Logo[];
@@ -14,16 +15,11 @@ const Skills = ({ logos, pt }: Props) => {
   return (
     <section className="py-16" id="skills">
       <div className="container mx-auto">
-        <header className="text-center mb-10">
-          <h2 className="font-serif">
-            <span className="font-bold block uppercase text-xl text-gray-500 tracking-widest">
-              Technical
-            </span>
-            <span className="font-bold uppercase text-4xl tracking-wider">
-              Skills
-            </span>
-          </h2>
-        </header>
+        <SectionHeader
+          topTitle="Technical"
+          botTitle="Skills"
+          className="mb-10 text-center"
+        />
         <p className="w-2/3 mx-auto mb-14 text-center">
           I have tried different technologies on the projects that I have worked
           on. Even though I have my own preferences, I am always pushing myself
@@ -78,7 +74,7 @@ const Skills = ({ logos, pt }: Props) => {
             </Swiper>
           </div>
           <div className="w-1/2 pt-4 pb-28 pr-10">
-            <div className="font-serif mb-10">
+            <div className="font-serif mb-8">
               <span className="font-bold block uppercase text-md text-gray-500 tracking-widest">
                 Teaching
               </span>
@@ -87,12 +83,12 @@ const Skills = ({ logos, pt }: Props) => {
               </span>
             </div>
             <p>
-              I also handled 2 sections of “Basics of Web Development” Subject
+              I also handled “Basics of Web Development” subject for 2 sections
               in college as a Practice Teacher during my stay at the
               Technological University of the Philippines as part of my Bachelor
               of Technical Teacher Education (BTTE) program. I taught HTML5,
               CSS3 and Basic Javascript on Bachelor of Science in Industrial
-              Education (BSIE) students as kind of like my On-the-job training.
+              Education (BSIE) students.
             </p>
           </div>
         </div>

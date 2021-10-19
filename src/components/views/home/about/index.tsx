@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SectionHeader from "../../../sectionHeader/sectionHeader";
 
 const About = () => {
   return (
@@ -16,16 +17,11 @@ const About = () => {
             </div>
           </div>
           <div className="w-1/2 p-4  ">
-            <header>
-              <h2 className="font-serif mb-5">
-                <span className="font-bold block uppercase text-xl text-gray-500 tracking-widest">
-                  About
-                </span>
-                <span className="font-bold uppercase text-4xl tracking-wider">
-                  Butch Klein
-                </span>
-              </h2>
-            </header>
+            <SectionHeader
+              topTitle="About"
+              botTitle="Butch Klein"
+              className="mb-5 "
+            />
 
             <div className="pr-20">
               <p>

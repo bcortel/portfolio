@@ -21,8 +21,8 @@ function MainLayout({ children, className, style }: Props) {
         className={clsx(styles["content"], className, "leading-6 ")}
       >
         {children}
-        <Footer />
       </main>
+      <Footer />
     </div>
   );
 }

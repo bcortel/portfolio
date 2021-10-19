@@ -4,6 +4,7 @@ import { EffectFade, Thumbs, Navigation, Autoplay } from "swiper";
 import { ProjectSlide } from "../../../slide";
 import { ProjectProps } from "../../../../types/projects";
 import { ProjectSliderThumb } from "../../../sliderThumb";
+import SectionHeader from "../../../sectionHeader/sectionHeader";
 
 const Projects = ({ projects }: ProjectProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
@@ -11,16 +12,11 @@ const Projects = ({ projects }: ProjectProps) => {
   return (
     <section className="py-10 pb-16" id="projects">
       <div className="container mx-auto">
-        <header className="text-center mb-14">
-          <h2 className="font-serif">
-            <span className="font-bold block uppercase text-xl text-gray-500 tracking-widest">
-              My
-            </span>
-            <span className="font-bold uppercase text-4xl tracking-wider">
-              Projects
-            </span>
-          </h2>
-        </header>
+        <SectionHeader
+          topTitle="My"
+          botTitle="Projects"
+          className="mb-14 text-center"
+        />
         <div className="relative h-96 ">
           <Swiper
             modules={[EffectFade, Thumbs, Autoplay]}
