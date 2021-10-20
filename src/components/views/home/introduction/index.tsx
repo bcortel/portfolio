@@ -26,6 +26,7 @@ const Introduction = () => {
             layout="responsive"
             height={300}
             width={300}
+            priority={true}
           />
         </div>
       </div>
