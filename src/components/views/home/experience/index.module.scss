@@ -1,0 +1,28 @@
+.timeline {
+    height: 1100px;
+
+    &>div>div>div {
+        width: 600px;
+    }
+
+    .exp-1 {
+        top: 10%
+    }
+
+    .exp-2 {
+        top: 25%
+    }
+
+    .exp-3 {
+        top: 40%
+    }
+
+
+    .exp-4 {
+        top: 70%
+    }
+
+    .exp-5 {
+        top: 80%
+    }
+}

@@ -62,6 +62,18 @@ function Header() {
               <Link
                 className="p-7 inline-block cursor-pointer"
                 activeClass="active"
+                to="exp"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="p-7 inline-block cursor-pointer"
+                activeClass="active"
                 to="contact"
                 spy={true}
                 smooth={true}

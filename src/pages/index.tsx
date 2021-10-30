@@ -2,6 +2,7 @@ import MainLayout from "../layout/main";
 import Head from "next/head";
 import {
   About,
+  Experience,
   Introduction,
   Projects,
   Skills,
@@ -27,6 +28,7 @@ const Home = ({ projects, logos, pt }: Props) => {
       <About />
       <Projects projects={projects} />
       <Skills logos={logos} pt={pt} />
+      <Experience />
       <Contact />
     </MainLayout>
   );

@@ -15,54 +15,88 @@ import styles from "./index.module.scss";
 
 function Footer() {
   return (
-    <footer className={clsx("py-5 relative", styles["footer"])}>
+    <footer className={clsx("py-6 relative", styles["footer"])}>
       <div className="absolute inset-0 bg-white "></div>
       <div className="container mx-auto relative">
-        <ul className="flex justify-center items-center mt-2">
-          <li>
-            <a href="" className="px-2">
+        <div className="flex justify-center items-center mt-2 flex-wrap">
+          <div className="w-1/6 flex items-center justify-around">
+            <a
+              href="https://www.facebook.com/butch.klein.cortel"
+              rel="noreferrer"
+              target="_blank"
+              className="px-2 text-center flex items-center justify-center flex-col w-44 hover:shadow-xl hover:scale-105  hover:opacity-100 transform transition-all rounded-md h-32"
+            >
               <FontAwesomeIcon size={"2x"} icon={faFacebook} color="#4267B2" />
+              <span className="block">/butch.klein.cortel</span>
             </a>
-          </li>
-          <li>
-            <a href="" className="px-2">
+          </div>
+          <div className="w-1/6 flex items-center justify-around">
+            <a
+              href="mailto: cortel.butch.kleina@gmail.com"
+              className="px-2 text-center flex items-center justify-center flex-col w-44 hover:shadow-xl hover:scale-105  hover:opacity-100 transform transition-all rounded-md h-32"
+            >
               <FontAwesomeIcon
                 size={"2x"}
                 icon={faEnvelopeSquare}
                 color="#EA4335"
               />
+              <span className="block">cortel.butch.kleina</span>
             </a>
-          </li>
-          <li>
-            <a href="" className="px-2">
+          </div>
+          <div className="w-1/6 flex items-center justify-around">
+            <a
+              href="tel: +63 (975) 008 8319"
+              className="px-2 text-center flex items-center justify-center flex-col w-44 hover:shadow-xl hover:scale-105  hover:opacity-100 transform transition-all rounded-md h-32"
+            >
               <FontAwesomeIcon size={"2x"} icon={faPhoneSquare} />
+              <span className="block">+63 (975) 008 8319</span>
             </a>
-          </li>
-          <li>
-            <a href="" className="px-2">
+          </div>
+        </div>
+        <div className="flex justify-center items-center mt-2 flex-wrap">
+          <div className="w-1/6 flex items-center justify-around">
+            <a
+              href="https://twitter.com/CortelButch"
+              rel="noreferrer"
+              target="_blank"
+              className="px-2 text-center flex items-center justify-center flex-col w-44 hover:shadow-xl hover:scale-105  hover:opacity-100 transform transition-all rounded-md h-32"
+            >
               <FontAwesomeIcon
                 size={"2x"}
                 icon={faTwitterSquare}
                 color="#1DA1F2"
               />
+              <span className="block">/CortelButch</span>
             </a>
-          </li>
-          <li>
-            <a href="" className="px-2">
+          </div>
+          <div className="w-1/6 flex items-center justify-around">
+            <a
+              href="https://www.linkedin.com/in/butch-cortel-894925203/"
+              rel="noreferrer"
+              target="_blank"
+              className="px-2 text-center flex items-center justify-center flex-col w-44 hover:shadow-xl hover:scale-105  hover:opacity-100 transform transition-all rounded-md h-32"
+            >
               <FontAwesomeIcon size={"2x"} icon={faLinkedin} color="#2867B2" />
+              <span className="block">/butch-cortel</span>
             </a>
-          </li>
-          <li>
-            <a href="" className="px-2">
+          </div>
+          <div className="w-1/6 flex items-center justify-around">
+            <a
+              href="https://github.com/ButsCortel"
+              rel="noreferrer"
+              target="_blank"
+              className="px-2 text-center flex items-center justify-center flex-col w-44 hover:shadow-xl hover:scale-105  hover:opacity-100 transform transition-all rounded-md h-32"
+            >
               <FontAwesomeIcon
                 size={"2x"}
                 icon={faGithubSquare}
                 color="#171515"
               />
+              <span className="block">/ButsCortel</span>
             </a>
-          </li>
-        </ul>
-        <div className="text-center mt-2">
+          </div>
+        </div>
+        <div className="text-center mt-4 text-sm font-semibold text-gray-500">
           <p>
             &copy; 2021 <span>Butch Klein Cortel</span>. Software Development
             services. All rights reserved.
