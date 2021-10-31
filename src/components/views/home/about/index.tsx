@@ -15,6 +15,7 @@ const About = () => {
                   alt="intrinsic"
                   width={600}
                   height={400}
+                  priority
                 />
               </div>
             </Fade>
