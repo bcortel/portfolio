@@ -4,10 +4,10 @@ import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
-    <section id="about" className="relative py-14">
+    <section id="about" className="relative lg:py-14 py-6 outer">
       <div className="container mx-auto ">
-        <div className="flex justify-around">
-          <div className="w-1/2 flex justify-center">
+        <div className="lg:flex justify-around">
+          <div className="lg:w-1/2 flex justify-center items-center">
             <Fade direction="left" triggerOnce>
               <div className="block">
                 <Image
@@ -15,21 +15,19 @@ const About = () => {
                   alt="intrinsic"
                   width={600}
                   height={400}
-                  priority={true}
                 />
               </div>
             </Fade>
           </div>
-          <div className="w-1/2 p-4  ">
+          <div className="lg:w-1/2 p-4  ">
             <Fade direction="right" triggerOnce>
-              <div>
-                {" "}
+              <div className="text-center lg:text-left">
                 <SectionHeader
                   topTitle="About"
                   botTitle="Butch Klein"
                   className="mb-5 "
                 />
-                <div className="pr-20">
+                <div className="xl:pr-20">
                   <p>
                     Hello and welcome to my portfolio! I&#39;m a Web developer
                     and I have worked with different programming languages,

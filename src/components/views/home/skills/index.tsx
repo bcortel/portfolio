@@ -14,7 +14,7 @@ type Props = {
 
 const Skills = ({ logos, pt }: Props) => {
   return (
-    <section className="py-16" id="skills">
+    <section className="lg:py-16 py-4 outer" id="skills">
       <div className="container mx-auto">
         <Fade direction="down" triggerOnce>
           <div>
@@ -23,7 +23,7 @@ const Skills = ({ logos, pt }: Props) => {
               botTitle="Skills"
               className="mb-10 text-center"
             />
-            <p className="w-2/3 mx-auto mb-14 text-center">
+            <p className="px-2 lg:px-0 lg:w-2/3 mx-auto mb-14 text-center">
               I have tried different technologies on the projects that I have
               worked on. Even though I have my own preferences, I am always
               pushing myself to learn more or at least have a bit of
@@ -33,10 +33,13 @@ const Skills = ({ logos, pt }: Props) => {
             </p>
           </div>
         </Fade>
-        <Fade direction="up" triggerOnce>
+        <Fade direction="up" triggerOnce cascade>
           <Marquee className="mb-20">
             {logos?.map((logo) => (
-              <div className="block relative h-28 w-36 mx-10" key={logo.id}>
+              <div
+                className="block relative md:h-28 md:w-36 h-20 w-32 md:mx-10 mx-5"
+                key={logo.id}
+              >
                 <Image
                   alt="logo"
                   src={logo.src}
@@ -47,14 +50,12 @@ const Skills = ({ logos, pt }: Props) => {
               </div>
             ))}
           </Marquee>
-        </Fade>
-        <Fade direction="up" triggerOnce>
-          <div className="flex">
-            <div className="w-1/2">
+          <div className="flex lg:flex-row flex-col-reverse">
+            <div className="lg:w-1/2 py-4">
               <Swiper
                 modules={[EffectFade, Autoplay]}
                 effect="fade"
-                className="h-full pt-swiper"
+                className="lg:h-full h-96 pt-swiper "
                 loop={true}
                 spaceBetween={10}
                 speed={1000}
@@ -80,7 +81,7 @@ const Skills = ({ logos, pt }: Props) => {
                 ))}
               </Swiper>
             </div>
-            <div className="w-1/2 pt-4 pb-28 pr-10">
+            <div className="lg:w-1/2 pl-2 xl:pt-4 xl:pb-28 lg:pr-10 text-center lg:text-left">
               <div className="font-serif mb-8">
                 <span className="font-bold block uppercase text-md text-gray-500 tracking-widest">
                   Teaching

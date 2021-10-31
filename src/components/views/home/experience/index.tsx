@@ -5,7 +5,7 @@ import { Zoom, Fade } from "react-awesome-reveal";
 
 const Experience = () => {
   return (
-    <section className="py-16" id="exp">
+    <section className="md:pt-16 pb-16 md:pb-10 outer" id="exp">
       <div className="container mx-auto">
         <Fade triggerOnce>
           <SectionHeader
@@ -17,7 +17,7 @@ const Experience = () => {
 
         <div
           className={clsx(
-            "bg-gray-300 w-2 mx-auto relative rounded-lg mb-10",
+            "bg-gray-300 w-2 ml-2 sm:ml-0  md:mx-auto relative rounded-lg mb-10",
             styles["timeline"]
           )}
         >
@@ -27,7 +27,7 @@ const Experience = () => {
               styles["exp-1"]
             )}
           >
-            <div className="absolute transform top-1/2 transform -translate-y-1/2 left-6">
+            <div className="absolute transform md:top-1/2 transform -translate-y-1/2  left-6 ">
               <Zoom triggerOnce>
                 <div className="rounded-lg shadow-xl  p-6">
                   <div className="font-bold">
@@ -51,7 +51,7 @@ const Experience = () => {
               styles["exp-2"]
             )}
           >
-            <div className="absolute transform top-1/2 transform -translate-y-1/2 right-6">
+            <div className="absolute transform md:top-1/2 transform -translate-y-1/2  md:right-6 left-6 md:left-auto">
               <Zoom triggerOnce>
                 <div className="rounded-lg shadow-xl p-6">
                   <div className="font-bold">Repair Technician (2017-2018)</div>
@@ -74,7 +74,7 @@ const Experience = () => {
               styles["exp-3"]
             )}
           >
-            <div className="absolute transform top-1/2 transform -translate-y-1/2 left-6">
+            <div className="absolute transform md:top-1/2 transform -translate-y-1/2  left-6">
               <Zoom triggerOnce>
                 <div className="rounded-lg shadow-xl p-6 ">
                   <div className="font-bold">
@@ -100,7 +100,7 @@ const Experience = () => {
               styles["exp-4"]
             )}
           >
-            <div className="absolute transform top-1/2 transform -translate-y-1/2 right-6">
+            <div className="absolute transform md:top-1/2 transform -translate-y-1/2  md:right-6 left-6 md:left-auto">
               <Zoom triggerOnce>
                 <div className="rounded-lg shadow-xl p-6 ">
                   <div className="font-bold">Web Developer (March 2021)</div>
@@ -125,7 +125,7 @@ const Experience = () => {
               styles["exp-5"]
             )}
           >
-            <div className="absolute transform top-1/2 transform -translate-y-1/2 left-6">
+            <div className="absolute transform md:top-1/2 transform -translate-y-1/2  left-6">
               <Zoom triggerOnce>
                 <div className="rounded-lg shadow-xl p-6 ">
                   <div className="font-bold">

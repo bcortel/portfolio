@@ -41,7 +41,11 @@ const Introduction = () => {
           <div className="my-3">
             <ul className="flex justify-center items-center mt-2">
               <li>
-                <a href="" className="px-2">
+                <a
+                  href=""
+                  className="px-2 transform block hover:scale-110 transition"
+                  id="fb"
+                >
                   <FontAwesomeIcon
                     size={"2x"}
                     icon={faFacebook}
@@ -50,7 +54,11 @@ const Introduction = () => {
                 </a>
               </li>
               <li>
-                <a href="" className="px-2">
+                <a
+                  href=""
+                  className="px-2 transform block hover:scale-110 transition"
+                  id="gm"
+                >
                   <FontAwesomeIcon
                     size={"2x"}
                     icon={faEnvelopeSquare}
@@ -59,12 +67,20 @@ const Introduction = () => {
                 </a>
               </li>
               <li>
-                <a href="" className="px-2">
+                <a
+                  href=""
+                  className="px-2 transform block hover:scale-110 transition"
+                  id="cp"
+                >
                   <FontAwesomeIcon size={"2x"} icon={faPhoneSquare} />
                 </a>
               </li>
               <li>
-                <a href="" className="px-2">
+                <a
+                  href=""
+                  className="px-2 transform block hover:scale-110 transition"
+                  id="tw"
+                >
                   <FontAwesomeIcon
                     size={"2x"}
                     icon={faTwitterSquare}
@@ -73,7 +89,11 @@ const Introduction = () => {
                 </a>
               </li>
               <li>
-                <a href="" className="px-2">
+                <a
+                  href=""
+                  className="px-2 transform block hover:scale-110 transition"
+                  id="li"
+                >
                   <FontAwesomeIcon
                     size={"2x"}
                     icon={faLinkedin}
@@ -82,7 +102,11 @@ const Introduction = () => {
                 </a>
               </li>
               <li>
-                <a href="" className="px-2">
+                <a
+                  href=""
+                  className="px-2 transform block hover:scale-110 transition"
+                  id="gh"
+                >
                   <FontAwesomeIcon
                     size={"2x"}
                     icon={faGithubSquare}

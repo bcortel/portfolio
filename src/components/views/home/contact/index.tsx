@@ -20,15 +20,15 @@ const Contact = () => {
     >
       <div className="absolute inset-0 bg-white opacity-80 "></div>
       <div className="container mx-auto relative">
-        <div className="p-10 bg-white w-3/5 mx-auto rounded-md shadow-xl">
+        <div className="p-5 md:p-10 bg-white lg:w-4/5 xl:w-3/5 mx-auto rounded-md shadow-xl">
           <SectionHeader
             topTitle="Get in"
             botTitle="Touch"
             className="text-center mb-10"
           />
           <form action="">
-            <div className="flex mb-4">
-              <div className="w-1/3 mx-1">
+            <div className="flex flex-wrap md:flex-nowrap mb-4">
+              <div className="w-full md:w-1/3 mx-1">
                 <label htmlFor="name">Name</label>
                 <input
                   className="block w-full border-solid border-b border-gray-500 p-2"
@@ -40,7 +40,7 @@ const Contact = () => {
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              <div className="w-1/3 mx-1">
+              <div className="w-full md:w-1/3 mx-1">
                 <label htmlFor="email">Email</label>
                 <input
                   className="block w-full border-solid border-b border-gray-500 p-2"
@@ -52,7 +52,7 @@ const Contact = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div className="w-1/3 mx-1">
+              <div className="w-full md:w-1/3 mx-1">
                 <label htmlFor="phone">Phone</label>
                 <input
                   className="block w-full border-solid border-b border-gray-500 p-2"
@@ -87,7 +87,7 @@ const Contact = () => {
                 className={`bg-gray-500 border-2 rounded border-gray-500 text-white rounded font-semibold text-lg uppercase py-2 px-6 transition ${
                   isDisabled()
                     ? "pointer-events-none opacity-50"
-                    : "hover:bg-white hover:text-black"
+                    : "hover:bg-yellow-500 hover:border-yellow-500"
                 }`}
               >
                 Submit

@@ -25,19 +25,19 @@ const ProjectSlide = ({
   };
 
   return (
-    <div className="flex min-h-full ">
-      <div className="w-1/2 p-5 px-6 text-center">
+    <div className="flex min-h-full lg:flex-row flex-col-reverse">
+      <div className="lg:w-1/2 w-full p-5 xl:px-6 text-center">
         <div className="mb-4">
           <div className="text-3xl font-bold ">{title}</div>
           <div className="text-xl text-gray-500">{subTitle}</div>
         </div>
-        <p className="h-1/3">{text}</p>
+        <p className="xl:h-1/3 h-2/4">{text}</p>
         <div className="mt-5 font-bold">{footerText}</div>
       </div>
-      <div className="w-2/5 relative mx-auto flex justify-center items-center bg-white p-10">
+      <div className="w-full lg:w-2/5 h-80 relative mx-auto flex justify-center items-center bg-white p-4 xl:p-10 self-center">
         <div
           className={`block relative h-full w-full cursor-pointer transition-all transform ${
-            isHovered && "scale-105 shadow-lg"
+            isHovered && "scale-105 shadow-lg rounded-lg"
           }`}
         >
           <Image

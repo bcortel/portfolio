@@ -2,3 +2,9 @@
     background: #fff url('/static/images/desk.jpg') center/cover no-repeat;
     background-attachment: fixed;
 }
+
+.contact-flex {
+    @media screen and (max-width: 480px) {
+        display: block;
+    }
+}

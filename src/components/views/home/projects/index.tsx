@@ -11,7 +11,7 @@ const Projects = ({ projects }: ProjectProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   return (
-    <section className="py-10 pb-16" id="projects">
+    <section className="lg:py-10 py-6 pb-16 outer" id="projects">
       <div className="container mx-auto">
         <Fade direction="up" triggerOnce>
           <SectionHeader
@@ -19,13 +19,13 @@ const Projects = ({ projects }: ProjectProps) => {
             botTitle="Projects"
             className="mb-14 text-center"
           />
-          <div className="relative h-96 ">
+          <div className="relative lg:h-96 h-auto">
             <Swiper
               modules={[EffectFade, Thumbs, Autoplay]}
               loop={true}
               spaceBetween={10}
               thumbs={{ swiper: thumbsSwiper }}
-              className="project-swiper h-full"
+              className="project-swiper lg:h-full h-auto"
               effect="fade"
               navigation={false}
               allowTouchMove={false}
@@ -48,7 +48,7 @@ const Projects = ({ projects }: ProjectProps) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="w-1/2 absolute top-3/4 left-0 bg-white px-6">
+            <div className="lg:w-1/2 lg:absolute top-full xl:top-3/4 left-0 bg-white px-6">
               <Swiper
                 style={{
                   //@ts-ignore
