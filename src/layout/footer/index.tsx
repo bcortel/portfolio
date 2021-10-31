@@ -11,11 +11,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import clsx from "clsx";
 import React from "react";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import useWindowSize from "../../hooks/useWindowSize";
 import styles from "./index.module.scss";
 
 function Footer() {
-  const { width } = useWindowDimensions();
+  const { width } = useWindowSize();
 
   return (
     <footer className={clsx("py-6 relative", styles["footer"])}>
