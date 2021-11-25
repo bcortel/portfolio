@@ -42,6 +42,8 @@ const Introduction = () => {
             <ul className="flex justify-center items-center mt-2">
               <li>
                 <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://www.facebook.com/butch.klein.cortel"
                   className="px-2 transform block hover:scale-110 transition"
                   id="fb"
@@ -55,6 +57,8 @@ const Introduction = () => {
               </li>
               <li>
                 <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="mailto: cortel.butch.kleina@gmail.com"
                   className="px-2 transform block hover:scale-110 transition"
                   id="gm"
@@ -68,6 +72,8 @@ const Introduction = () => {
               </li>
               <li>
                 <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="tel: +63 (975) 008 8319"
                   className="px-2 transform block hover:scale-110 transition"
                   id="cp"
@@ -77,6 +83,8 @@ const Introduction = () => {
               </li>
               <li>
                 <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://twitter.com/CortelButch"
                   className="px-2 transform block hover:scale-110 transition"
                   id="tw"
@@ -90,6 +98,8 @@ const Introduction = () => {
               </li>
               <li>
                 <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/butch-cortel-894925203/"
                   className="px-2 transform block hover:scale-110 transition"
                   id="li"
@@ -103,6 +113,8 @@ const Introduction = () => {
               </li>
               <li>
                 <a
+                  target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/ButsCortel"
                   className="px-2 transform block hover:scale-110 transition"
                   id="gh"
