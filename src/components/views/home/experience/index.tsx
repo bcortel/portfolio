@@ -103,7 +103,7 @@ const Experience = () => {
             <div className="absolute transform md:top-1/2 transform -translate-y-1/2  md:right-6 left-6 md:left-auto">
               <Zoom triggerOnce>
                 <div className="rounded-lg shadow-xl p-6 ">
-                  <div className="font-bold">Web Developer (March 2021)</div>
+                  <div className="font-bold">Web Developer (2021)</div>
                   <div className="font-semibold">
                     YFT Documents Facilitation Services
                   </div>
@@ -129,7 +129,7 @@ const Experience = () => {
               <Zoom triggerOnce>
                 <div className="rounded-lg shadow-xl p-6 ">
                   <div className="font-bold">
-                    Freelance Frontend Web Developer(April 2021)
+                    Freelance Frontend Web Developer (2021)
                   </div>
                   <div className="font-semibold">Taocrowd</div>
                   <p className="mt-2">
