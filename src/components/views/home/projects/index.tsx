@@ -11,7 +11,7 @@ const Projects = ({ projects }: ProjectProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   return (
-    <section className="lg:py-10 py-6 pb-16 outer" id="projects">
+    <section className="xl:py-10 lg:py-20 py-6 pb-16 outer" id="projects">
       <div className="container mx-auto">
         <Fade direction="up" triggerOnce>
           <SectionHeader

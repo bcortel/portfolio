@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
-    <section id="about" className="relative lg:py-14 py-6 outer">
+    <section id="about" className="relative lg:py-14 py-6 px-2 xs:px-0 outer">
       <div className="container mx-auto ">
         <div className="lg:flex justify-around">
           <div className="lg:w-1/2 flex justify-center items-center">

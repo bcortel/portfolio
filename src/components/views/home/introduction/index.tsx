@@ -14,7 +14,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Introduction = () => {
   return (
-    <section className="pb-14 container mx-auto" id="hp-intro">
+    <section className="pb-14 container mx-auto px-2 xs:px-0" id="hp-intro">
       <Fade triggerOnce cascade>
         <div className="flex justify-center">
           <div

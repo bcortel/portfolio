@@ -55,7 +55,7 @@ const Skills = ({ logos, pt }: Props) => {
               <Swiper
                 modules={[EffectFade, Autoplay]}
                 effect="fade"
-                className="lg:h-full h-96 pt-swiper "
+                className="lg:h-full h-96 pt-swiper px-2 xs:px-0"
                 loop={true}
                 spaceBetween={10}
                 speed={1000}
@@ -81,7 +81,7 @@ const Skills = ({ logos, pt }: Props) => {
                 ))}
               </Swiper>
             </div>
-            <div className="lg:w-1/2 pl-2 xl:pt-4 xl:pb-28 lg:pr-10 text-center lg:text-left">
+            <div className="lg:w-1/2  xl:pt-4 xl:pb-28 lg:pr-10 text-center lg:text-left px-2 xs:px-0">
               <div className="font-serif mb-8">
                 <span className="font-bold block uppercase text-md text-gray-500 tracking-widest">
                   Teaching
