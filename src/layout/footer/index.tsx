@@ -117,8 +117,8 @@ function Footer() {
         </Fade>
 
         <div className="text-center mt-4 text-sm font-semibold text-gray-500">
-          <p>
-            &copy; 2021 <span>Butch Klein Cortel</span>. Software Development
+          <p className="px-2">
+            &copy; 2023 <span>Butch Klein Cortel</span>. Software Development
             services. All rights reserved.
           </p>
         </div>
