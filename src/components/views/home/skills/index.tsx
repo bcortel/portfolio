@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Autoplay } from "swiper";
+import { EffectFade, Autoplay } from "swiper/modules";
 import Marquee from "react-fast-marquee";
 import { Logo } from "../../../../types/logos";
 import { PT } from "../../../../types/pt";

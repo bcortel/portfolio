@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Thumbs, Navigation, Autoplay } from "swiper";
+import { EffectFade, Thumbs, Navigation, Autoplay } from "swiper/modules";
 import { ProjectSlide } from "../../../slide";
 import { ProjectProps } from "../../../../types/projects";
 import { ProjectSliderThumb } from "../../../sliderThumb";
@@ -24,7 +24,10 @@ const Projects = ({ projects }: ProjectProps) => {
               modules={[EffectFade, Thumbs, Autoplay]}
               loop={true}
               spaceBetween={10}
-              thumbs={{ swiper: thumbsSwiper }}
+              thumbs={{
+                swiper:
+                  thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+              }}
               className="project-swiper lg:h-full h-auto"
               effect="fade"
               navigation={false}
